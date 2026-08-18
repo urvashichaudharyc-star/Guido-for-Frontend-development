@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Development Guide</title>
+
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --surface: #141821;
+      --text: #f5f7fb;
+      --muted: #a4adbd;
+      --accent: #7c5cff;
+      --accent-light: #22d3ee;
+      --border: #293040;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    .logo {
+      color: var(--accent-light);
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 24px;
+    }
+
+    .hero {
+      max-width: 760px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      color: var(--accent-light);
+      background: var(--surface);
+      font-size: 0.85rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.8rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 680px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary-btn {
+      background: var(--accent);
+      color: white;
+    }
+
+    .secondary-btn {
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      transition: 0.2s ease;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">&lt;/FrontendGuide&gt;</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#videos">Videos</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <p class="tag">Your frontend learning space</p>
+
+      <h1>Guide for <span>Frontend Development.</span></h1>
+
+      <p class="intro">
+        Welcome to the world of frontend development. Learn HTML, CSS,
+        JavaScript, and the skills needed to turn creative ideas into
+        beautiful, responsive websites.
+      </p>
+
+      <p class="intro">
+        Start with the basics, practise consistently, and build projects as
+        you go. This guide will help you follow a clear path and discover
+        useful reference videos along the way.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary-btn" href="#roadmap">Start Learning</a>
+        <a class="btn secondary-btn" href="#videos">Explore Videos</a>
+      </div>
+    </section>
+  </main>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="reference.html">Reference Videos</a>
+  <a class="btn primary-btn" href="greeting.html">Finish Your Journey</a>
+
+</body>
+</html>
